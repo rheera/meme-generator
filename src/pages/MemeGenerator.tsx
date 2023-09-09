@@ -45,8 +45,8 @@ const MemeGenerator = () => {
   }
 
   return (
-    <main>
-      <form>
+    <main className="main">
+      <form className="main__form">
         <label htmlFor="topText"></label>
         <input
           id="topText"
@@ -55,6 +55,7 @@ const MemeGenerator = () => {
           value={memeData.topText}
           name="topText"
           onChange={handleChange}
+          placeholder="Enter Top Text"
         />
         <label htmlFor="topText"></label>
         <input
@@ -64,14 +65,17 @@ const MemeGenerator = () => {
           value={memeData.bottomText}
           name="bottomText"
           onChange={handleChange}
+          placeholder="Enter Bottom Text"
         />
       </form>
-      <button onClick={getRandomMeme}>Random Meme</button>
+      <button className="main__button" onClick={getRandomMeme}>
+        Get a new meme image 🖼️
+      </button>
       {isMemesLoaded && (
         <img
           src={allMemes[memeData.currentMeme].url}
           alt="Template Meme"
-          className="meme"
+          className="main__meme"
         />
       )}
     </main>
