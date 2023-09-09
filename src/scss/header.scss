@@ -1,0 +1,27 @@
+.header {
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+  font-family: Karla;
+
+  &__icon {
+    max-width: 32px;
+  }
+  &__title {
+    margin: 0 auto 0 7px;
+    letter-spacing: -2.075px;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
