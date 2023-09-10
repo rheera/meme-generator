@@ -74,7 +74,7 @@ const MemeGenerator = () => {
       {isMemesLoaded && (
         <div className="main__meme">
           <img
-            src={allMemes[memeData.currentMeme].url}
+            src={allMemes[memeData.currentMeme]["url"]}
             alt="Template Meme"
             className="main__meme__image"
           />
