@@ -72,11 +72,15 @@ const MemeGenerator = () => {
         Get a new meme image 🖼️
       </button>
       {isMemesLoaded && (
-        <img
-          src={allMemes[memeData.currentMeme].url}
-          alt="Template Meme"
-          className="main__meme"
-        />
+        <div className="main__meme">
+          <img
+            src={allMemes[memeData.currentMeme].url}
+            alt="Template Meme"
+            className="main__meme__image"
+          />
+          <h2 className="main__meme__text top">{memeData.topText}</h2>
+          <h2 className="main__meme__text bottom">{memeData.bottomText}</h2>
+        </div>
       )}
     </main>
   );
